@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TypeCobolBuilder.Engine.BuildEngine">
+    <Position X="1.25" Y="1.25" Width="2" />
+    <NestedTypes>
+      <Class Name="TypeCobolBuilder.Engine.BuildEngine.Config" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Engine\BuildEngine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgABAAAAIAAAAAAAIIAEAAAAKAAoIAAAAAAABCAgAAg=</HashCode>
+      <FileName>Engine\BuildEngine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TcbInterop" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeCobolBuilder.Engine.BuildProject">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Engine\BuildProject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BuilderEngine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TypeCobolBuilder.Engine.BuildParser">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAIAAAAAQAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Engine\BuildParser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BuilderEngine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="tcb.TCB" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
