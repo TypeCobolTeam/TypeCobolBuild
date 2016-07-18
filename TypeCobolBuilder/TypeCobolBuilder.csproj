@@ -55,30 +55,33 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Antlr4.Runtime">
-      <HintPath>..\..\..\TCOB_TCBUILDENGINE\TCOB_TCBUILDENGINE\TypeCobol\Debug\Antlr4.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr4.Runtime.net45">
-      <HintPath>..\TCB\packages\Antlr4.Runtime.4.3.0\lib\net45\Antlr4.Runtime.net45.dll</HintPath>
-    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\TCB\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
     <Reference Include="CommandLine">
       <HintPath>..\TCB\packages\CommandLineParser.1.9.71\lib\net45\CommandLine.dll</HintPath>
     </Reference>
+    <Reference Include="FilesystemCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\IBM\Rational Team Concert Client for Microsoft Visual Studio IDE\bin\FilesystemCommon.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\TCB\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="ProcessCommon">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\IBM\Rational Team Concert Client for Microsoft Visual Studio IDE\bin\ProcessCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="RepositoryHttpTransport">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\IBM\Rational Team Concert Client for Microsoft Visual Studio IDE\bin\RepositoryHttpTransport.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleMsgPack">
-      <HintPath>..\TCB\packages\TypeCobol\SimpleMsgPack.dll</HintPath>
+      <HintPath>packages\TypeCobol\SimpleMsgPack.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="TypeCobol">
-      <HintPath>..\TCB\packages\TypeCobol\TypeCobol.exe</HintPath>
+      <HintPath>packages\TypeCobol\TypeCobol.exe</HintPath>
     </Reference>
     <Reference Include="TypeCobol.CLI">
-      <HintPath>..\TCB\packages\TypeCobol\TypeCobol.CLI.exe</HintPath>
+      <HintPath>packages\TypeCobol\TypeCobol.CLI.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
