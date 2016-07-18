@@ -13,11 +13,11 @@ The solution contains 3 projects
 
 ## Projects Dependencies
 - **JTCB** depends on :
--- **JDK 1.7** or later downloadable at 
--- **RTC-Client-plainJavaLib-5.0.2 downloadable at https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads
--- **args4j** at http://args4j.kohsuke.org/ and maven repository https://mvnrepository.com/artifact/args4j/args4j/2.33
--- **hamcrest-core** at http://hamcrest.org/JavaHamcrest/ and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3
--- **junit** at http://junit.org/junit4/ and maven repository https://mvnrepository.com/artifact/junit/junit/4.12
+> - **JDK 1.7** or later downloadable at 
+> - **RTC-Client-plainJavaLib-5.0.2** downloadable at https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads
+> - **args4j** at http://args4j.kohsuke.org/ and maven repository https://mvnrepository.com/artifact/args4j/args4j/2.33
+> - **hamcrest-core** at http://hamcrest.org/JavaHamcrest/ and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3
+> - **junit** at http://junit.org/junit4/ and maven repository https://mvnrepository.com/artifact/junit/junit/4.12
 
 ## Generating the solution
 
