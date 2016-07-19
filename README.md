@@ -13,12 +13,12 @@ The solution contains 3 projects
 - **TypeCobolBuilder** is the Build Engine implementation directly in relation with TypeCobol infrastructure.
 
 ## Projects Dependencies
-- **JTCB** depends on :
+- **JTCB** depends on:
 	- [**JDK 1.7**](http://www.oracle.com/technetwork/java/javase/overview/index.html) or later.
 	- [**RTC-Client-plainJavaLib-5.0.2**](https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads)
-	- [**args4j**](http://args4j.kohsuke.org/) and maven repository https://mvnrepository.com/artifact/args4j/args4j/2.33
-	- [**hamcrest-core**](http://hamcrest.org/JavaHamcrest/) and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3
-	- [**junit**](http://junit.org/junit4/) and maven repository https://mvnrepository.com/artifact/junit/junit/4.12
+	- [**args4j**](http://args4j.kohsuke.org/) and maven repository https://mvnrepository.com/artifact/args4j/args4j
+	- [**hamcrest-core**](http://hamcrest.org/JavaHamcrest/) and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
+	- [**junit**](http://junit.org/junit4/) and maven repository https://mvnrepository.com/artifact/junit/junit
 	- [**TCB**](https://github.com/TypeCobolTeam/TypeCobolBuild)
 
 - **TCB** depends on:
@@ -27,7 +27,7 @@ The solution contains 3 projects
 	- [**lo4gnet**](https://logging.apache.org/log4net/) with nuget at https://www.nuget.org/packages/log4net/
 	- [**TypeCobolBuilder**](https://github.com/TypeCobolTeam/TypeCobolBuild)
 
-- **TypeCobolBuilder**
+- **TypeCobolBuilder** depends on:
 	- [**TCB**](https://github.com/TypeCobolTeam/TypeCobolBuild)
 	- [**.Net Framework 4.5**](https://msdn.microsoft.com/fr-fr/library/5a4x27ek%28v=vs.110%29.aspx)
 	- [**TypeCobol**](https://github.com/TypeCobolTeam/TypeCobol)
@@ -39,7 +39,7 @@ The solution contains 3 projects
 ![Alt text](http://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
-    RTC_SDK [shape=doubleoctagon];
+    RTC_SDK [shape=doubleoctagon,label="RTC SDK .jars"];
     JTCB [shape=box,label="JTCB.jar"];
     TCB [shape=box,label="TCB.dll"];
     TypeCobolBuilder [shape=box,label="TypeCobolBuilder.dll"];
@@ -56,20 +56,11 @@ The solution contains 3 projects
   }
 )
 
-<!-- 
-![class diagram](http://yuml.me/diagram/class/
-  [RTC SDK Jars]<->[JTCB.jar], 
-  [JTCB.jar]<-(Java/JNI)->[TCB.dll], [note: Interoperability betwen JTCB and TCB is achieved by Java/JNI{bg:cornsilk}],
-  [TCB.dll]<->[TypeCobolBuilder.dll],
-  [TypeCobolBuilder.dll]<->[TypeCobol.exe]
-)
--->;
-
 ## Generating the solution
 
 The solution is generated using various configuration
 - **JTCB** can be generated using:
-	- **Maven (version 3.3.9)** at: https://maven.apache.org/
-	- **Gradle (version 2.14)** at: https://gradle.org/
-- **TCB and TypeCobolBuilder** are generated using a Visual Studio 2015 (at least Community Edition) solution.
+	- [**Maven (version 3.3.9)**](https://maven.apache.org/)
+	- [**Gradle (version 2.14)**](https://gradle.org/)
+- **TCB and TypeCobolBuilder** are generated using a [Visual Studio 2015](https://www.visualstudio.com/fr-fr/products/visual-studio-community-vs.aspx) (at least Community Edition) solution.
 
