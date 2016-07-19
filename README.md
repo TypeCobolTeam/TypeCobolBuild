@@ -36,15 +36,27 @@ The solution contains 3 projects
 	- **Castle.Core** at: http://www.castleproject.org/ or by nuget at https://www.nuget.org/packages/Castle.Core/
 	- **Antr4.Runtime** at: https://github.com/sharwell/antlr4cs or by nuget at https://www.nuget.org/packages/Antlr4.Runtime
 
-```flow
-jtcb=>operation: JTCB
-rtcsdk=>operation: RTC SDK
-tcb=>operation: TCB
-builder=>operation: TypeCobolBuilder
-jtcb=>rtcsdk
-jtcb<=>TCB
-tcb<=>builder
-```
+Recently I have come across an interesting tool available at http://yuml.me
+
+If you want to use this tool, it uses basic uml syntax and can generate charts like below.
+
+![class diagram](http://yuml.me/diagram/class/
+  [note: You can stick notes on diagrams too!{bg:cornsilk}],
+  [Customer]<>1-orders 0..*>[Order], 
+  [Order]++*-*>[LineItem], 
+  [Order]-1>[DeliveryMethod], 
+  [Order]*-*>[Product], 
+  [Category]<->[Product], 
+  [DeliveryMethod]^[National], 
+  [DeliveryMethod]^[International]
+)
+
+![class diagram](http://yuml.me/diagram/class/
+  [RTC SDK Jars]<->[JTCB.jar], 
+  [JTCB.jar]<->[TCB.dll], [note: Interoperability betwen JTCB and TCB is achieve by Java/JNI{bg:cornsilk}],
+  [TCB.dll]<->[TypeCobolBuilder.dll],
+  [TypeCobolBuilder.dll]<->[TypeCobol.exe]
+)
 
 ## Generating the solution
 
