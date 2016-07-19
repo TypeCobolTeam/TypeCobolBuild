@@ -36,7 +36,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1BFA4484-C92E-4502-AD9F-4D0E646B230E}</ProjectGuid>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>TCB</RootNamespace>
     <SccProjectName>&lt;Project Location In Database&gt;</SccProjectName>
