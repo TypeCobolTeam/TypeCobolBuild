@@ -14,31 +14,47 @@ The solution contains 3 projects
 
 ## Projects Dependencies
 - **JTCB** depends on :
-	- **JDK 1.7** or later at 
-	- **RTC-Client-plainJavaLib-5.0.2** at: https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads
-	- **args4j** at http://args4j.kohsuke.org/ and maven repository https://mvnrepository.com/artifact/args4j/args4j/2.33
-	- **hamcrest-core** at http://hamcrest.org/JavaHamcrest/ and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3
-	- **junit** at http://junit.org/junit4/ and maven repository https://mvnrepository.com/artifact/junit/junit/4.12
+	- **JDK 1.7**(http://www.oracle.com/technetwork/java/javase/overview/index.html) or later.
+	- **RTC-Client-plainJavaLib-5.0.2**(https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads)
+	- **args4j**(http://args4j.kohsuke.org/) and maven repository https://mvnrepository.com/artifact/args4j/args4j/2.33
+	- **hamcrest-core**(http://hamcrest.org/JavaHamcrest/) and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3
+	- **junit**(http://junit.org/junit4/) and maven repository https://mvnrepository.com/artifact/junit/junit/4.12
 	- **TCB**
 
 - **TCB** depends on:
 	- **JDK 1.7 JNI**
-	- **.Net Framework 4.5** or later, at: 
-	- **lo4gnet** downloadable at: https://logging.apache.org/log4net/ or by nuget at https://www.nuget.org/packages/log4net/
+	- **.Net Framework 4.5**("https://msdn.microsoft.com/fr-fr/library/5a4x27ek(v=vs.110).aspx")
+	- **lo4gnet**(https://logging.apache.org/log4net/) with nuget at https://www.nuget.org/packages/log4net/
 	- **TypeCobolBuilder**
 
 - **TypeCobolBuilder**
 	- **TCB**
-	- **.Net Framework 4.5** or later, at: 
+	- **.Net Framework 4.5**()
 	- **TypeCobol**
-	- **lo4gnet** at: https://logging.apache.org/log4net/ or by nuget at https://www.nuget.org/packages/log4net/
-	- **CommandLine** at: https://github.com/gsscoder/commandline or by nuget at https://www.nuget.org/packages/CommandLineParser/
-	- **Castle.Core** at: http://www.castleproject.org/ or by nuget at https://www.nuget.org/packages/Castle.Core/
-	- **Antr4.Runtime** at: https://github.com/sharwell/antlr4cs or by nuget at https://www.nuget.org/packages/Antlr4.Runtime
+	- **lo4gnet**(https://logging.apache.org/log4net/) with nuget at https://www.nuget.org/packages/log4net/
+	- **CommandLine**(https://github.com/gsscoder/commandline) with nuget at https://www.nuget.org/packages/CommandLineParser/
+	- **Castle.Core**(http://www.castleproject.org/) with nuget at https://www.nuget.org/packages/Castle.Core/
+	- **Antr4.Runtime**(https://github.com/sharwell/antlr4cs) with nuget at https://www.nuget.org/packages/Antlr4.Runtime
+
+![Alt text](http://g.gravizo.com/g?
+  digraph G {
+    aize ="4,4";
+    RTC_SDK [shape=box];
+    JTCB [shape=box,label="JTCB.jar"];
+    TCB [shape=box,label="TCB.dll"];
+    TypeCobolBuilder [shape=box,label="TypeCobolBuilder.dll"];
+    TypeCobol [shape=box,label="TypeCobol.exe"];
+    JavaJni -> JTCB
+    TCB -> JavaJni;
+    TCB <-> TypeCobolBuilder;
+    TypeCobolBuilder <-> TypeCobol;
+    JavaJni [label="Java/JNI",style=filled,color=".7 .3 1.0"];
+  }
+)
 
 ![class diagram](http://yuml.me/diagram/class/
-  Java Rectangle{[RTC SDK Jars]<->[JTCB.jar], 
-  [JTCB.jar]}<-(Java/JNI)->[TCB.dll], [note: Interoperability betwen JTCB and TCB is achieve by Java/JNI{bg:cornsilk}],
+  [RTC SDK Jars]<->[JTCB.jar], 
+  [JTCB.jar]<-(Java/JNI)->[TCB.dll], [note: Interoperability betwen JTCB and TCB is achieved by Java/JNI{bg:cornsilk}],
   [TCB.dll]<->[TypeCobolBuilder.dll],
   [TypeCobolBuilder.dll]<->[TypeCobol.exe]
 )
