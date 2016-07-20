@@ -1,6 +1,6 @@
 # TypeCobolBuild
 
-Build engine for TypeCobol : A Prototype of an incremental Cobol compiler front-end for IBM Enterprise Cobol 5.1 for zOS syntax.
+Build engine for [TypeCobol](https://github.com/TypeCobolTeam/TypeCobol) : A Prototype of an incremental Cobol compiler front-end for IBM Enterprise Cobol 5.1 for zOS syntax.
 The purpose of the TypeCobolBuild project is to provide a tool for compiling project using the TypeCobol parser/generator. 
 
 # Architecture overview
@@ -10,7 +10,7 @@ The purpose of the TypeCobolBuild project is to provide a tool for compiling pro
 The solution contains 3 projects
 - **JTCB** is the main java project, it uses the [RTC-SDK](https://jazz.net/downloads/rational-team-concert/releases/5.0.2) (Rational Team Concert) to access files located on RTC Streams.
 - **TCB** is DLL (Dynamic Link Library) written using [C++/CLI](https://en.wikipedia.org/wiki/C%2B%2B/CLI) programming language which implements the interoperability between the Java SDK and the .Net Framewok.
-- **TypeCobolBuilder** is the Build Engine implementation directly in relation with TypeCobol infrastructure and written using [C#](https://fr.wikipedia.org/wiki/C_sharp) programming language.
+- **TypeCobolBuilder** is the Build Engine implementation directly in relation with [TypeCobol](https://github.com/TypeCobolTeam/TypeCobol) infrastructure and written using [C#](https://fr.wikipedia.org/wiki/C_sharp) programming language.
 
 ## Projects Dependencies
 - **JTCB** depends on:
@@ -39,6 +39,8 @@ The solution contains 3 projects
 ![Alt text](http://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
+    labelloc="t";
+    label="Modules data flow diagram";
     RTC_SDK [shape=doubleoctagon,label="RTC SDK .jars"];
     JTCB [shape=box,label="JTCB.jar"];
     TCB [shape=box,label="TCB.dll"];
