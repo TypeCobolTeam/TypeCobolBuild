@@ -1,7 +1,7 @@
 # TypeCobolBuild
 
 Build engine for [TypeCobol](https://github.com/TypeCobolTeam/TypeCobol) : A Prototype of an incremental Cobol compiler front-end for IBM Enterprise Cobol 5.1 for zOS syntax.
-The purpose of the TypeCobolBuild project is to provide a tool for compiling project using the TypeCobol parser/generator. 
+The purpose of the TypeCobolBuild project is to provide a tool for compiling projects using the [TypeCobol](https://github.com/TypeCobolTeam/TypeCobol) parser/generator. 
 
 # Architecture overview
 
@@ -40,8 +40,8 @@ The solution contains 3 projects
 ![Alt text](http://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
-    labelloc="t";
-    label="Modules data flow diagram";
+    //labelloc="t";
+    //label="Modules data flow diagram";
     RTC_SDK [shape=doubleoctagon,label="RTC SDK .jars"];
     JTCB [shape=box,label="JTCB.jar"];
     TCB [shape=box,label="TCB.dll"];
