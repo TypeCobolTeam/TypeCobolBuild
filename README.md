@@ -52,7 +52,7 @@ The solution contains 3 projects
 	RTC_SDK -> JTCB;
     JavaJni -> JTCB
     JavaJni -> TCB;
-    TCB -> TypeCobolBuilder;
+    TCB -> TypeCobolBuilder[style=dotted];
 	TypeCobolBuilder -> TCB;
     TypeCobolBuilder -> TypeCobol;
 	TypeCobol -> TypeCobolBuilder;
