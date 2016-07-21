@@ -36,6 +36,8 @@ The solution contains 3 projects
 	- [**CommandLine**](https://github.com/gsscoder/commandline) with nuget at https://www.nuget.org/packages/CommandLineParser/
 	- [**Castle.Core**](http://www.castleproject.org/) with nuget at https://www.nuget.org/packages/Castle.Core/
 	- [**Antr4.Runtime**](https://github.com/sharwell/antlr4cs) with nuget at https://www.nuget.org/packages/Antlr4.Runtime
+	- [**SimpleMsgPack**](https://github.com/ymofen/SimpleMsgPack.Net) with nuget at https://www.nuget.org/packages/SimpleMsgPack/1.0.0/ReportAbuse
+	- [**Jet.Brains.Annotations**](https://www.jetbrains.com/help/resharper/10.0/Code_Analysis__Code_Annotations.html) with nuget at https://www.nuget.org/packages/JetBrains.Annotations/10.1.5/ReportAbuse
 	
 ### Modules data flow diagram
 ![Alt text](http://g.gravizo.com/g?
