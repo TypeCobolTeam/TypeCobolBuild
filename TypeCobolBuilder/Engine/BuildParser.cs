@@ -12,7 +12,7 @@ namespace TypeCobolBuilder.Engine
     /// <summary>
     /// This the Parser use by the Builder.
     /// </summary>
-    public class BuildParser : TypeCobol.Server.Parser
+    public class BuildParser : TypeCobol.Parser
     {        
         /// <summary>
         /// All projects being parsed.
@@ -24,7 +24,7 @@ namespace TypeCobolBuilder.Engine
         /// <param name="name">The Build Engine'</param>
         /// <param name="name">This Build Parser name</param>
         public BuildParser(BuildEngine buildEngine, string name)
-            : base(name)
+            : base(/*name*/)            
         {
             BuilderEngine = buildEngine;
             m_Projects = new Dictionary<string, BuildProject>();
@@ -44,6 +44,11 @@ namespace TypeCobolBuilder.Engine
             {
                 m_BuildEngine = value;
             }
+        }
+
+        protected static DocumentFormat GetFormat(string filename)
+        {
+            return DocumentFormat.FreeUTF8Format;//TODO autodetect
         }
 
         /// <summary>

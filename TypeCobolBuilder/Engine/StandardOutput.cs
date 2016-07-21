@@ -118,7 +118,7 @@ namespace TypeCobolBuilder.Engine
         {
             return m_txtWritter.WriteAsync(value);
         }
-        public Task WriteAsync(char[] buffer)
+        public new Task WriteAsync(char[] buffer)
         {
             return m_txtWritter.WriteAsync(buffer);
         }
