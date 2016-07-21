@@ -64,7 +64,7 @@ The solution contains 3 projects
 
 The solution is generated using various configuration
 - **JTCB** can be generated using:
-	- [**Maven (version 3.3.9)**](https://maven.apache.org/)
-	- [**Gradle (version 2.14)**](https://gradle.org/)
+	- [**Maven**](https://maven.apache.org/)
+	- [**Gradle**](https://gradle.org/)
 - **TCB and TypeCobolBuilder** are generated using a [Visual Studio 2015](https://www.visualstudio.com/fr-fr/products/visual-studio-community-vs.aspx) (at least Community Edition) solution.
 
