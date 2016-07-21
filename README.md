@@ -62,9 +62,9 @@ The solution contains 3 projects
   }
 )
 
-## [Generating the solution](https://github.com/TypeCobolTeam/TypeCobolBuild/wiki)
+## Generating the solution
 
-The solution is generated using various configuration
+The solution is generated using various configuration [(see Wiki Home Page)](https://github.com/TypeCobolTeam/TypeCobolBuild/wiki)
 - **JTCB** can be generated using:
 	- [**Maven**](https://maven.apache.org/)
 	- [**Gradle**](https://gradle.org/)
