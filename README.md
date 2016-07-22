@@ -25,7 +25,6 @@ The solution contains 3 projects
 - **TCB** depends on:
 	- [**JDK 1.7 JNI**](http://www.oracle.com/technetwork/java/javase/overview/index.html) or later.
 	- [**.Net Framework 4.5**](https://msdn.microsoft.com/fr-fr/library/5a4x27ek%28v=vs.110%29.aspx)
-	- [**lo4gnet**](https://logging.apache.org/log4net/) with nuget at https://www.nuget.org/packages/log4net/
 	- [**TypeCobolBuilder**](https://github.com/TypeCobolTeam/TypeCobolBuild)
 
 - **TypeCobolBuilder** depends on:
