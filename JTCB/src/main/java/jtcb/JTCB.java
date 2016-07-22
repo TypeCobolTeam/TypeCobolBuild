@@ -136,6 +136,14 @@ public class JTCB {
             "..\\x64\\Debug_exe",                        
             "..\\x64\\Release",            
             "..\\x64\\Release_exe",            
+            "..\\TCB\\Debug",
+            "..\\TCB\\Debug_exe",
+            "..\\TCB\\Release",     
+            "..\\TCB\\Release_exe",     
+            "..\\TCB\\x64\\Debug",            
+            "..\\TCB\\x64\\Debug_exe",            
+            "..\\TCB\\x64\\Release",            
+            "..\\TCB\\x64\\Release_exe",                        
         };
         for (int i = 0; i < sub_dirs.length; i++)
         {

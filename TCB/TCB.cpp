@@ -5,24 +5,7 @@
 #include "TCB.h"
 #include "jni\JTCBEngine.h"
 
-#ifdef TCB_EXE_VERSION
-#include "Logger.h"
-#endif
-
 using namespace tcb;
-
-#ifdef TCB_EXE_VERSION
-/**
-	This if the application is an executable.
-*/
-int main(array<System::String ^> ^args)
-{
-	TCB ^tcv = gcnew TCB(nullptr);
-    Console::WriteLine(L"Hello World");	
-	tcb::Logger::GetLogger()->Info("TCB ias an executable");
-    return 0;
-}
-#endif
 
 TCB::TCB(JTCBEngine *jtcbEngibne)
 {
@@ -105,48 +88,3 @@ System::String^ TCB::LoadExternalFileContent(System::String^ externalFilePath)
 	return nullptr;
 }
 
-
-#if 0 //SAMPLE CODE
-#include <jni.h>       /* where everything is defined */
-    ...
-    JavaVM *jvm;       /* denotes a Java VM */
-    JNIEnv *env;       /* pointer to native method interface */
-    JavaVMInitArgs vm_args; /* JDK/JRE 6 VM initialization arguments */
-    JavaVMOption* options = new JavaVMOption[1];
-    options[0].optionString = "-Djava.class.path=/usr/lib/java";
-    vm_args.version = JNI_VERSION_1_6;
-    vm_args.nOptions = 1;
-    vm_args.options = options;
-    vm_args.ignoreUnrecognized = false;
-    /* load and initialize a Java VM, return a JNI interface
-     * pointer in env */
-    JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
-    delete options;
-    /* invoke the Main.test method using the JNI */
-    jclass cls = env->FindClass("Main");
-    jmethodID mid = env->GetStaticMethodID(cls, "test", "(I)V");
-    env->CallStaticVoidMethod(cls, mid, 100);
-    /* We are done. */
-    jvm->DestroyJavaVM();
-#endif
-
-#if 0
-	JavaVMInitArgs vm_args;
-	JavaVMOption options[4];
-
-	options[0].optionString = "-Djava.compiler=NONE";           /* disable JIT */
-	options[1].optionString = "-Djava.class.path=c:\myclasses"; /* user classes */
-	options[2].optionString = "-Djava.library.path=c:\mylibs";  /* set native library path */
-	options[3].optionString = "-verbose:jni";                   /* print JNI-related messages */
-
-	vm_args.version = JNI_VERSION_1_2;
-	vm_args.options = options;
-	vm_args.nOptions = 4;
-	vm_args.ignoreUnrecognized = TRUE;
-
-	/* Note that in the JDK/JRE, there is no longer any need to call
-	 * JNI_GetDefaultJavaVMInitArgs.
-	 */
-	res = JNI_CreateJavaVM(&vm, (void **)&env, &vm_args);
-	if (res < 0) ...
-#endif
