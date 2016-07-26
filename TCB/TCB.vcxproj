@@ -291,7 +291,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <OutputFile>..\JTCB\build\TCB\$(Platform)\Debug\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>..\JTCB\build\libs\TCB\$(Platform)\Debug\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_x64_gradle|x64'">
@@ -374,7 +374,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <OutputFile>..\JTCB\build\TCB\$(Platform)\Release\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>..\JTCB\build\libs\TCB\$(Platform)\Release\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_x64_gradle|x64'">
