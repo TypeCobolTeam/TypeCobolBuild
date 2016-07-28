@@ -213,7 +213,7 @@ public class JTCB {
         try
         {
             // Allocate a session
-            RTCSession session = new RTCSession();
+            RTCSession session = new RTCSession(repositoryURI);
             // Allocate a RTC context
             RTCContext context = new RTCContext(session);
             //Set repository locations
