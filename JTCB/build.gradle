@@ -16,18 +16,40 @@ apply plugin: 'java'
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
+configurations {
+    rtc
+    compile.extendsFrom rtc
+}
+
+dependencies {
+    rtc fileTree(dir: 'rtc_libs', include: '*.jar')
+}
+
 //create a single Jar with all dependencies
 task dist(type: Jar) {
 	manifest {
         attributes 'Implementation-Title': 'JTCB',  
         	'Implementation-Version': version,
+                "Class-Path": configurations.rtc.collect { 'lib/'+it.name }.join(' '),
         	'Main-Class': 'jtcb.JTCB'
     }
     baseName = project.name + '-all'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    from { (configurations.runtime - configurations.rtc).collect { it.isDirectory() ? it : zipTree(it) } }
     exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA' 
     with jar
 }
+
+task assembleManifestClasspath {
+    doLast {
+        jar {
+            manifest {
+                attributes("Class-Path": configurations.rtc.collect { 'lib/'+it.name }.join(' ')) 
+		attributes("Main-Class": 'jtcb.JTCB')
+            }
+        }
+    }
+} 
+jar.dependsOn assembleManifestClasspath
 
 // In this section you declare where to find the dependencies of your project
 repositories {
