@@ -1,12 +1,12 @@
 IF exist ".\dist" RMDIR /S /Q .\dist
 MKDIR .\dist
 MKDIR .\dist\lib
+XCOPY /S .\rtc_libs .\dist\lib
 
 IF %1 == maven goto :maven
 :gradle
 CALL gradle dist
 XCOPY /S .\build\libs .\dist
-XCOPY /S .\rtc_libs .\dist\lib
 CD .\dist
 REN JTCB-all-1.0-SNAPSHOT.jar JTCB.jar
 CD ..

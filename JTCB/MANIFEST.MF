@@ -1,0 +1,66 @@
+Class-Path: lib/apache-mime4j-0.6.jar lib/com.ibm.icu_4.2.1.v20100412.
+ jar lib/com.ibm.rational.wvcm.ct_3.0.900.v20140703_1449.jar lib/com.i
+ bm.rational.wvcm.factory_3.0.100.v20120430_0235.jar lib/com.ibm.ratio
+ nal.wvcm.interop_3.1.700.v20140903_0652.jar lib/com.ibm.rational.wvcm
+ .ri.repo_3.0.600.v20130614_0105.jar lib/com.ibm.team.build.client_3.0
+ .1100.v20140930_0238.jar lib/com.ibm.team.build.common_3.1.1000.v2014
+ 0929_0110.jar lib/com.ibm.team.calm.foundation.common_3.1.900.v201410
+ 15_0159.jar lib/com.ibm.team.connector.scm.client_3.0.1000.v20140903_
+ 0652.jar lib/com.ibm.team.connector.scm.common_3.1.100.v20140519_0154
+ .jar lib/com.ibm.team.connector.scm.operations_3.1.400.v20140519_0154
+ .jar lib/com.ibm.team.datawarehouse.common_2.2.100.v20140707_2355.jar
+  lib/com.ibm.team.dev.jdojo.runtime.common_3.0.600.v20131215_1909.jar
+  lib/com.ibm.team.enterprise.buildablesubset.client_3.1.400.v20140320
+ _0115.jar lib/com.ibm.team.enterprise.buildablesubset.common_3.1.601.
+ v20140620_0123.jar lib/com.ibm.team.filesystem.client.1.7.jar lib/com
+ .ibm.team.filesystem.client.daemon_3.1.500.v20130930_0113.jar lib/com
+ .ibm.team.filesystem.client.workitems_3.1.700.v20141015_1622.jar lib/
+ com.ibm.team.filesystem.client_3.2.400.v20141015_1622.jar lib/com.ibm
+ .team.filesystem.common.workitems_3.1.700.v20140925_1510.jar lib/com.
+ ibm.team.filesystem.common_3.2.400.v20141007_0339.jar lib/com.ibm.tea
+ m.foundation.client_1.1.1100.v20120901_0511.jar lib/com.ibm.team.foun
+ dation.common_1.3.200.v20141015_0017.jar lib/com.ibm.team.foundation.
+ rcp.core_1.1.2000.v20130924_2348.jar lib/com.ibm.team.fulltext.common
+ _1.2.200.v20140930_0542.jar lib/com.ibm.team.interop.client.rest_3.0.
+ 500.v20130626_2007.jar lib/com.ibm.team.interop.client_3.0.600.v20140
+ 522_0057.jar lib/com.ibm.team.interop.common_3.0.700.v20130614_0105.j
+ ar lib/com.ibm.team.process.client_1.3.100.v20141015_0017.jar lib/com
+ .ibm.team.process.common_1.3.200.v20141015_0017.jar lib/com.ibm.team.
+ reports.client_2.1.1200.v20130129_0138.jar lib/com.ibm.team.reports.c
+ ommon_2.4.100.v20140929_2018.jar lib/com.ibm.team.repository.client_1
+ .3.200.v20141015_2351.jar lib/com.ibm.team.repository.common.json_1.2
+ .200.v20141019_2353.jar lib/com.ibm.team.repository.common.remoteacce
+ ss.auth_1.3.100.v20140930_0542.jar lib/com.ibm.team.repository.common
+ .remoteaccess_1.2.200.v20141015_2351.jar lib/com.ibm.team.repository.
+ common.serialize_1.2.200.v20141015_2351.jar lib/com.ibm.team.reposito
+ ry.common.transport_1.2.0.v20140307_1622.jar lib/com.ibm.team.reposit
+ ory.common_1.4.200.v20141015_2351.jar lib/com.ibm.team.repository.rcp
+ .common_3.1.500.v20131128_0520.jar lib/com.ibm.team.rtc.common_3.1.11
+ 00.v20141007_0339.jar lib/com.ibm.team.rtc.foundation.api.common_3.1.
+ 500.v20140322_0239.jar lib/com.ibm.team.scm.admin.common_3.2.0.v20130
+ 830_0148.jar lib/com.ibm.team.scm.client_3.2.400.v20141010_0124.jar l
+ ib/com.ibm.team.scm.common_3.2.400.v20141010_0124.jar lib/com.ibm.tea
+ m.workitem.api.common_3.1.700.v20140620_0123.jar lib/com.ibm.team.wor
+ kitem.client_3.1.1100.v20141009_1302.jar lib/com.ibm.team.workitem.co
+ mmon_3.2.300.v20141022_1844.jar lib/commons-io-1.2.jar lib/httpclient
+ -4.1.2.jar lib/httpcore-4.1.3.jar lib/httpcore-nio-4.1.3.jar lib/http
+ mime-4.1.2.jar lib/javax.servlet_2.5.0.v200910301333.jar lib/javax.wv
+ cm_1.6.100.v20130614_0105.jar lib/net.oauth_0.2.2000.v20131217_0302.j
+ ar lib/org.apache.commons.codec_1.3.0.v20100518-1140.jar lib/org.apac
+ he.commons.httpclient_3.1.0.v201005080502.jar lib/org.apache.commons.
+ logging_1.0.4.v201005080501.jar lib/org.eclipse.core.filesystem_1.3.1
+ .R36x_v20100727-0745.jar lib/org.eclipse.core.jobs_3.5.2.R36x_v201104
+ 19.jar lib/org.eclipse.core.resources_3.6.2.R36x_v20110628-1020.jar l
+ ib/org.eclipse.core.resources_3.6.2.R36x_v20120712-1700.jar lib/org.e
+ clipse.core.runtime_3.6.0.v20100505.jar lib/org.eclipse.emf.common_2.
+ 6.0.v20100914-1218.jar lib/org.eclipse.emf.ecore.change_2.5.1.v201009
+ 07-1643.jar lib/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar li
+ b/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar lib/org.eclipse.equi
+ nox.common_3.6.0.v20100503.jar lib/org.eclipse.equinox.preferences_3.
+ 3.1.R36x_v20110302.jar lib/org.eclipse.equinox.registry_3.5.0.v201005
+ 03.jar lib/org.eclipse.jface.text_3.6.1.r361_v20100825-0800.jar lib/o
+ rg.eclipse.jface.text_3.6.2.r362_v20121025.jar lib/org.eclipse.osgi_3
+ .6.50.R36x_v20111004-1525.jar lib/org.eclipse.osgi_3.6.50.R36x_v20120
+ 315-1500.jar lib/org.eclipse.text_3.5.0.v20100601-1300.jar lib/org.ec
+ lipse.xsd_2.6.0.v20100914-1218.jar
+Main-Class: jtcb.JTCB
