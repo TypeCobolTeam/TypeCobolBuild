@@ -131,7 +131,9 @@ public class RTCSession {
     {
         AuthentificationDialog dialog = new AuthentificationDialog(null, true);
         if (repositoryURI != null)
-            dialog.m_RepositoryTextField.setText(repositoryURI);        
+            dialog.m_RepositoryTextField.setText(repositoryURI);
+        String user = System.getProperty("user.name");
+        dialog.m_UserNameField.setText(user);
         dialog.setLocationByPlatform(true);
         dialog.setVisible(true);
        if (dialog.getReturnStatus() == AuthentificationDialog.RET_CANCEL)
