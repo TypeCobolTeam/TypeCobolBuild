@@ -16,6 +16,7 @@ The solution contains 3 projects
 ## Projects Dependencies
 - **JTCB** depends on:
 	- [**JDK 1.7**](http://www.oracle.com/technetwork/java/javase/overview/index.html) or later.
+	- [**Rational Team Concert SDK 5.0.2**](https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads)
 	- [**RTC-Client-plainJavaLib-5.0.2**](https://jazz.net/downloads/rational-team-concert/releases/5.0.2?p=allDownloads)
 	- [**args4j**](http://args4j.kohsuke.org/) and maven repository https://mvnrepository.com/artifact/args4j/args4j
 	- [**hamcrest-core**](http://hamcrest.org/JavaHamcrest/) and maven repository https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core
