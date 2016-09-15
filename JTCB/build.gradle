@@ -27,6 +27,7 @@ dependencies {
 
 //create a single Jar with all dependencies
 task dist(type: Jar) {
+	from "messages.properties"
 	manifest {
         attributes 'Implementation-Title': 'JTCB',  
         	'Implementation-Version': version,

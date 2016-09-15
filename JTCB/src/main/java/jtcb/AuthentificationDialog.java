@@ -72,6 +72,7 @@ public class AuthentificationDialog extends javax.swing.JDialog {
         m_PasswordField = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         m_RepositoryTextField = new javax.swing.JTextField();
+        m_createPassFileCheck = new javax.swing.JCheckBox();
 
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -103,7 +104,10 @@ public class AuthentificationDialog extends javax.swing.JDialog {
 
         jLabel3.setText("Repository");
 
-        m_RepositoryTextField.setText("");
+        m_RepositoryTextField.setText("https://rtc-ni.cm-cic.fr/ccm/");
+
+        m_createPassFileCheck.setSelected(true);
+        m_createPassFileCheck.setText("Create password file");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -111,27 +115,29 @@ public class AuthentificationDialog extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cancelButton))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addGap(18, 18, 18))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(cancelButton))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel1)
+                                        .addGap(18, 18, 18))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel2)
+                                        .addGap(23, 23, 23)))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel2)
-                                    .addGap(23, 23, 23)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(21, 21, 21)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(m_UserNameField)
-                            .addComponent(m_PasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
-                            .addComponent(m_RepositoryTextField))))
+                                    .addComponent(jLabel3)
+                                    .addGap(21, 21, 21)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(m_UserNameField)
+                                .addComponent(m_PasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
+                                .addComponent(m_RepositoryTextField))))
+                    .addComponent(m_createPassFileCheck, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -152,7 +158,9 @@ public class AuthentificationDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(m_RepositoryTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(m_createPassFileCheck)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelButton)
                     .addComponent(okButton))
@@ -251,6 +259,7 @@ public class AuthentificationDialog extends javax.swing.JDialog {
     public javax.swing.JPasswordField m_PasswordField;
     public javax.swing.JTextField m_RepositoryTextField;
     public javax.swing.JTextField m_UserNameField;
+    public javax.swing.JCheckBox m_createPassFileCheck;
     private javax.swing.JButton okButton;
     // End of variables declaration//GEN-END:variables
 
