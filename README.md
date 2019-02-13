@@ -40,7 +40,7 @@ The solution contains 3 projects
 	- [**Jet.Brains.Annotations**](https://www.jetbrains.com/help/resharper/10.0/Code_Analysis__Code_Annotations.html) with nuget at https://www.nuget.org/packages/JetBrains.Annotations/10.1.5/ReportAbuse
 	
 ### Modules data flow diagram
-![Alt text](http://g.gravizo.com/g?
+![Alt text](https://g.gravizo.com/g?
   digraph G {
     aize ="4,4";
     //labelloc="t";
